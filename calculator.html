@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="functionCalculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <div id="previous-operand" ></div>
+            <div id="current-operand" >0</div>
+        </div>
+       <div class="keyboard">
+           <div class="row">
+               <button type="button" value="Sin" data-operation>Sin</button>
+                <button value="Cos" data-operation>Cos</button>
+               <button value="Tan" data-operation>Tan</button>
+               <!-- <button value="trigonometry" class="trigonometry">trigonometry</button> -->
+               <button value="CE" data-deleteAll>CE</button>
+               <button value="C" data-delete>&larr;</button>
+               <button value="trigonometry" class="trigonometry">trigonometry</button>
+           <div class="row">
+            <button value="log" data-operation>log</button>
+            <button type="button" value="7" data-number>7</button>
+            <button value="8" data-number>8</button>
+            <button value="9" data-number>9</button>
+            <button value="+" data-operation>+</button>
+        </div>
+        <div class="row">
+            <button value="&#8731;" data-functions>&#8731;</button>
+            <button value="4" data-number>4</button>
+            <button value="5" data-number>5</button>
+            <button value="6" data-number>6</button>
+            <button value="-" data-operation>-</button>
+        </div>
+        <div class="row">
+            <button value="√" data-operation>√</button>
+            <button value="1" data-number>1</button>
+            <button value="2" data-number>2</button>
+            <button value="3" data-number>3</button>
+            <button value='x' data-operation>x</button>
+        </div>
+        <div class="row">
+            <button value="÷">÷</button>
+            <button value="^">^</button>
+            <button value="0" data-number>0</button>
+            <button value="." data-number>.</button>
+            <button value="÷" data-operation>÷</button>
+        </div>
+        <div class="row">
+            <button value="exp" data-operation>exp</button>
+            <button value="X!" data-operation>X!</button>
+            <button value="1/x" data-operation>1/x</button>
+            <button value="%" data-operation>%</button>
+            <button value="=" data-equals>=</button>
+        </div>
+       </div> 
+    </div>
+<!-- <div id="digitalClock" onload="upDateTime()"></div> -->
+ <!-- <script src="calculator2.js" defer></script> -->
+<button id="instructions" data-modal-target ="#modal">Instructions</button> 
+<div class="modal" id="modal">
+    <div class="modal-header">
+     <div class="title">Instructions on how to use Mathematical Functions</div> 
+     <button id="closeButton" data-close-button>&times;</button>
+    </div>
+    <div class="modal-body">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        A magni neque, omnis aliquid quidem delectus eos tempora ipsam nesciunt temporibus 
+        reiciendis iure accusantium impedit assumenda quaerat sequi velit placeat qui, totam at 
+        fuga ratione consectetur. Reiciendis, quae? Beatae ab facere maiores eveniet,
+     consequuntur provident repudiandae,
+     quasi commodi soluta sapiente ipsam rerum dolorem blanditiis
+         harum quam deserunt aut reiciendis officiis cupiditate! Officia quae consequuntur dolor unde facere, quo deserunt.
+         Magnam doloremque minima aperiam commodi quia molestias suscipit sed ipsa porro. Vitae!
+    </div>
+  </div>
+  <!-- <progress value="40" max="100"></progress> -->
+ <div id="overlay"></div>
+ <script src="calculatorOOP.js"></script>
+ <script src="functionCalculator.js"></script>
+</body>
+</html>
